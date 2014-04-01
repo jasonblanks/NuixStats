@@ -1,16 +1,11 @@
 import sys
 import sys, stat, os, re, time, datetime
-#import base64, getpass, socket, smtplib
-#from email.mime.multipart import MIMEMultipart
-#from email.mime.text import MIMEText
-#from datetime import datetime, timedelta
-#import simplejson
 from datetime import timedelta
 from datetime import date
 from time import mktime
 
 MATTERS = []
-SERVERS = [r'\\USMDCAPP1050.ctecfts.com\f$\Nuix_Cases', r'\\USMDCAPP1038.ctecfts.com\g$\Nuix_Cases']
+SERVERS = [r'\\server\f$\Nuix_Cases', r'\\server\g$\Nuix_Cases']
 
 class Matter():
 	def __init__(self):
